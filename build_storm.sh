@@ -32,10 +32,10 @@ mkdir -p ${buildroot}/var/lib/storm
 
 #_ COPY FILES _#
 cp -R ${fakeroot}/* ${buildroot}/opt/storm
-cp storm storm-nimbus storm-supervisor storm-ui ${buildroot}/etc/default
+cp storm storm-nimbus storm-supervisor storm-ui storm-drpc ${buildroot}/etc/default
 cp storm.yaml ${buildroot}/etc/storm
 cp storm.log.properties ${buildroot}/etc/storm
-cp storm-nimbus.conf storm-supervisor.conf storm-ui.conf ${buildroot}/etc/init
+cp storm-nimbus.conf storm-supervisor.conf storm-ui.conf storm-drpc.conf ${buildroot}/etc/init
 
 #_ MAKE DEBIAN _#
 cd ${buildroot}
