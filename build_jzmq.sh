@@ -1,5 +1,5 @@
 #!/bin/bash
-name=libzmq0
+name=libjzmq
 arch='amd64' # Change to your architecture
 version=2.1.7
 url='https://github.com/nathanmarz/jzmq.git'
@@ -24,5 +24,5 @@ make install DESTDIR=${origdir}/${buildroot}
 
 #_ MAKE DEBIAN _#
 cd ${origdir}/${buildroot}
-fpm -t deb -n ${name} -v ${version} --description "${description}" --url="${url}" -a ${arch} --prefix=/ -d "libjzmq >= 2.1.7" -s dir -- .
+fpm -t deb -n ${name} -v ${version} --description "${description}" --url="${url}" -a ${arch} --prefix=/ -d "libzmq0 >= 2.1.7" -s dir -- .
 cd ${origdir}
