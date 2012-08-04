@@ -17,6 +17,7 @@ description='The 0MQ lightweight messaging kernel is a library which extends the
     This package contains the ZeroMQ shared library.'
 
 #_ MAIN _#
+rm -rf ${name}*.deb
 #_ MAKE DIRECTORIES _#
 rm -rf ${fakeroot}
 mkdir -p ${fakeroot}

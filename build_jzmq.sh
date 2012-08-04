@@ -11,7 +11,7 @@ description='JZMQ is the Java bindings for ZeroMQ'
 export JAVA_HOME='/usr/lib/jvm/java-6-sun-1.6.0.31'
 
 #_ MAIN _#
-rm -rf *.deb
+rm -rf ${name}*.deb
 rm -rf jzmq
 rm -rf ${buildroot}
 mkdir -p ${buildroot}

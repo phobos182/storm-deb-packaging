@@ -8,7 +8,7 @@ origdir=$(pwd)
 description="Storm is a distributed realtime computation system. Similar to how Hadoop provides a set of general primitives for doing batch processing, Storm provides a set of general primitives for doing realtime computation. Storm is simple, can be used with any programming language, is used by many companies, and is a lot of fun to use!"
 
 #_ MAIN _#
-rm -rf *.deb
+rm -rf ${name}*.deb
 rm -rf ${fakeroot}
 mkdir -p ${fakeroot}
 wget https://github.com/downloads/nathanmarz/storm/storm-${version}.zip
