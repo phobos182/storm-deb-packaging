@@ -25,4 +25,4 @@ make install DESTDIR=${origdir}/${buildroot}
 #_ MAKE DEBIAN _#
 cd ${origdir}/${buildroot}
 fpm -t deb -n ${name} -v ${version} --description "${description}" --url="${url}" -a ${arch} --prefix=/ -d "libzmq0 >= 2.1.7" -s dir -- .
-cd ${origdir}
+mv ${origdir}/${buildroot}/*.deb ${origdir}

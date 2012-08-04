@@ -40,4 +40,5 @@ cp storm-nimbus.conf storm-supervisor.conf storm-ui.conf storm-drpc.conf ${build
 #_ MAKE DEBIAN _#
 cd ${buildroot}
 fpm -t deb -n $name -v $version --description "$description" --url="$url" -a all --prefix=/ -d "libzmq0 >= 2.1.7" -d "libjzmq >= 2.1.7" -s dir -- .
+mv ${origdir}/${buildroot}/*.deb ${origdir}
 cd ${origdir}

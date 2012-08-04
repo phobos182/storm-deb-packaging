@@ -10,11 +10,17 @@ To make it as pain free as possible, I have used FPM to build the debian packagi
 * FPM (<https://github.com/jordansissel/fpm/>)
 * WGet
 
-I have supplied some default Upstart scripts for use with the packaging. They assume your primary interface is ETH0, so you may want to change that if it's not the case. Since there is no way to update-rc.d an upstart script, there is an option for 'ENABLE=yes' in /etc/default/storm-process. So using your favorite configuration management engine, you can change this to 'yes' to start the daemon on reboot.
+I have supplied some default Upstart scripts for use with the packaging. They assume your primary interface is ETH0, so you may want to change that if it's not the case. Since there is no way to update-rc.d an upstart script, there is an option for 'ENABLE=yes' in /etc/default/storm-process. So using your favorite configuration management engine, you can change this to 'yes' to start the daemon on reboot. The build scripts provided compile the dependencies listed in <https://github.com/nathanmarz/storm/wiki/Installing-native-dependencies>.
 
 Usage
 -----
-Just run the build_storm.sh script. Package will be in the build directory.
+Included are three scripts to build the debian packages for a storm installation.
+
+* build_storm.sh - Storm
+* build_libzmq0.sh - ZeroMQ libraries
+* build_jzmq0.sh - Java bindings for ZeroMQ
+
+Just run the build scripts, and debian artifacts will be created.
 
 ToDo
 -----

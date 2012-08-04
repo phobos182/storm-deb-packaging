@@ -34,4 +34,5 @@ make install DESTDIR=${origdir}/${buildroot}
 #_ MAKE DEBIAN _#
 cd ${origdir}/${buildroot}
 fpm -t deb -n ${name} -v ${version} --description "${description}" --url="${url}" -a ${arch} --prefix=/ -d 'libc6 >= 2.7'  -d 'libgcc1 >= 1:4.1.1'  -d 'libstdc++6 >= 4.1.1'  -d 'libuuid1 >= 2.16' -s dir -- .
+mv ${origdir}/${buildroot}/*.deb ${origdir}
 cd ${origdir}
