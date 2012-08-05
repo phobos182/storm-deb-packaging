@@ -23,6 +23,3 @@ Included are three scripts to build the debian packages for a storm installation
 
 Just run the build scripts, and debian artifacts will be created.
 
-ToDo
------
-* Going to upload the build scripts for libjzmq & libzmq0 as I have listed them as requirements for this script
