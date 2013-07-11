@@ -1,11 +1,11 @@
 #!/bin/bash
-name=libzmq0
+name=libzmq1
 arch='amd64' # Change to your architecture
 version=2.1.7
 url='http://www.zeromq.org/'
 package="http://download.zeromq.org/zeromq-${version}.tar.gz"
 buildroot=build
-fakeroot=libzmq0
+fakeroot=libzmq1
 origdir=$(pwd)
 description='The 0MQ lightweight messaging kernel is a library which extends the
     standard socket interfaces with features traditionally provided by

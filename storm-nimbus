@@ -4,5 +4,6 @@
 ENABLE="no"
 
 #_ NIMBUS _#
+STORM_NIMBUS_PID="/var/run/storm-nimbus.pid"
 STORM_NIMBUS_JVM_MEMORY="768m"
 STORM_NIMBUS_JVM_OPTS="-Dlog4j.configuration=storm.log.properties"
