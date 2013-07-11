@@ -37,6 +37,10 @@ fi
 ./autogen.sh
 ./configure --prefix=${prefix}
 make
+if [ $? != 0 ]; then
+  echo "Failed to build ${name}. Please ensure all dependencies are installed"
+  exit $?
+fi
 make install DESTDIR=`pwd`/build
 #_ MAKE DEBIAN _#
 cd build
