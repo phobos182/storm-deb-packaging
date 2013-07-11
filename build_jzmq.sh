@@ -53,7 +53,7 @@ fpm -t deb \
     --category ${section} \
     -m "${USER}@localhost" \
     --prefix=/ \
-    -d "libzmq0 >= 2.1.7" \
+    -d "libzmq1 >= 2.1.7" \
     -s dir \
     --after-install ${origdir}/shlib.postinst \
     --after-remove ${origdir}/shlib.postuninst \
