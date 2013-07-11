@@ -1,0 +1,9 @@
+#!/bin/sh
+
+set -e
+
+#DEBHELPER#
+
+[ "$1" = "configure" ] && ldconfig
+
+exit 0
