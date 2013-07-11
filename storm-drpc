@@ -6,4 +6,4 @@ ENABLE="no"
 #_ DRPC _#
 STORM_DRPC_PID="/var/run/storm-drpc.pid"
 STORM_DRPC_JVM_MEMORY="768m"
-STORM_DRPC_JVM_OPTS="-Dlog4j.configuration=storm.log.properties"
+STORM_DRPC_JVM_OPTS="-Dlog4j.configuration=file:/etc/storm/storm.log.properties -Dlogfile.name=drpc.log"

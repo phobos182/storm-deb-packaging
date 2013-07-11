@@ -1,8 +1,8 @@
 # /etc/default/storm
 
-JAVA_LIBRARY_PATH="/usr/local/lib:/opt/local/lib:/usr/lib"
+JAVA_LIBRARY_PATH="/usr/local/lib:/usr/lib"
 STORM_USER="storm"
-STORM_HOME="/var/lib/storm"
+STORM_HOME="/usr/lib/storm"
 STORM_LIB="$STORM_HOME/lib"
 STORM_JAR="$STORM_HOME/storm-*.jar"
 STORM_CONF="/etc/storm"

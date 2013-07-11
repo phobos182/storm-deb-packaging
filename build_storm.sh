@@ -1,5 +1,6 @@
 #!/bin/bash
 name=storm
+default_version=0.8.2
 version=$1
 : ${version:="0.8.2"}
 buildroot=build
@@ -25,7 +26,7 @@ rm -rf ${buildroot}
 mkdir -p ${buildroot}
 mkdir -p ${buildroot}/opt/storm
 mkdir -p ${buildroot}/etc/default
-mkdir -p ${buildroot}/etc/storm/conf.d
+mkdir -p ${buildroot}/etc/storm
 mkdir -p ${buildroot}/etc/init
 mkdir -p ${buildroot}/etc/init.d
 mkdir -p ${buildroot}/var/log/storm

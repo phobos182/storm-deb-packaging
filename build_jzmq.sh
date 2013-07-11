@@ -1,4 +1,5 @@
 #!/bin/bash
+set -x
 name=libjzmq
 arch='amd64' # Change to your architecture
 version=2.1.7

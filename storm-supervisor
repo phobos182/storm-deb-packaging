@@ -6,4 +6,4 @@ ENABLE="no"
 #_ SUPERVISOR _#
 STORM_SUPERVISOR_PID="/var/run/storm-supervisor.pid"
 STORM_SUPERVISOR_JVM_MEMORY="1024m"
-STORM_SUPERVISORR_JVM_OPTS="-Dlog4j.configuration=storm.log.properties"
+STORM_SUPERVISORR_JVM_OPTS="-Dlog4j.configuration=file:/etc/storm/storm.log.properties -Dlogfile.name=supervisor.log"
