@@ -36,10 +36,6 @@ fi
 # Build package
 ./autogen.sh
 ./configure --prefix=${prefix}
-#cd src/
-#CLASSPATH=.:./.:$CLASSPATH
-#javac -d . org/zeromq/ZMQ.java org/zeromq/App.java org/zeromq/ZMQForwarder.java org/zeromq/EmbeddedLibraryTools.java org/zeromq/ZMQQueue.java org/zeromq/ZMQStreamer.java org/zeromq/ZMQException.java
-#cd ..
 make
 make install DESTDIR=`pwd`/build
 #_ MAKE DEBIAN _#
