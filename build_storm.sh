@@ -57,9 +57,9 @@ fpm -t deb \
     -n $name \
     -v ${version}${package_version} \
     --description "$description" \
-    --before-install ${origdir}/storm_before_install.sh \
-    --after-install ${origdir}/storm_after_install.sh \
-    --after-remove ${origdir}/storm_after_remove.sh \
+    --before-install ${origdir}/storm.preinst \
+    --after-install ${origdir}/storm.postinst \
+    --after-remove ${origdir}/storm.postrm \
     --url="${url}" \
     -a ${arch} \
     --prefix=/ \
