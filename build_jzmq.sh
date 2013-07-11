@@ -31,7 +31,7 @@ cd jzmq
 mkdir -p build
 # Patch for 12.x releases
 if [ $(cat /etc/lsb-release|grep -i release|grep 12\.) ]; then
-  curl -vs https://github.com/nathanmarz/jzmq/pull/2.patch 2>/dev/null | patch -p
+  curl -L -v -s https://github.com/nathanmarz/jzmq/pull/2.patch 2>/dev/null | patch -p
 fi
 # Build package
 ./autogen.sh

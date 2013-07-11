@@ -28,7 +28,7 @@ fi
 # Make build directory, save location
 mkdir -p tmp && pushd tmp
 #_ DOWNLOAD & COMPILE _#
-curl -s -o ${src_package} ${download_url}
+curl -L -s -o ${src_package} ${download_url}
 tar -zxf ${src_package}
 cd zeromq-${version}/
 mkdir -p build
